@@ -1,7 +1,4 @@
 ![logo](/.README/logo.png)
-
-----
-
 <div align="center">
   <h2>✨자바 코딩테스트 스터디✨</h2>
   자바 코테를 위한 문제 풀이 스터디입니다.<br>
