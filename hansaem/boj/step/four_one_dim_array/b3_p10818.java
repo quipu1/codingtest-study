@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class b5_p10871 {
+public class b3_p10818 {
 	public static void main(String[] args) throws IOException {
 		//BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedReader br = new BufferedReader(
@@ -19,15 +19,15 @@ public class b5_p10871 {
 		StringBuilder sb = new StringBuilder();
 		
 		int N = Integer.parseInt(st.nextToken());
-		int X = Integer.parseInt(st.nextToken());
+		int min = 1000001;
+		int max = -1000001;
 		
-		int answer = 0;
 		st = new StringTokenizer(br.readLine());
 		for (int i = 0; i < N; i++) {
-			int tmp = Integer.parseInt(st.nextToken());
-			if (X > tmp) sb.append(tmp).append(" ");
+			int ele = Integer.parseInt(st.nextToken());
+			if (min > ele) min = ele;
+			if (max < ele) max = ele;
 		}
-		bw.write(sb.toString());
-		bw.close();
+		System.out.println(min + " " + max);
 	}
 }
