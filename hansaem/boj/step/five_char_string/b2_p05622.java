@@ -1,4 +1,4 @@
-package boj.step.char_string;
+package boj.step.five_char_string;
 
 import java.io.*;
 import java.util.StringTokenizer;

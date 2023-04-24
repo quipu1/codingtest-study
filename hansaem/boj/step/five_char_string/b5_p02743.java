@@ -1,13 +1,13 @@
-package boj.step.char_string;
+package boj.step.five_char_string;
 
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class b5_p11654 {
+public class b5_p02743 {
     public static void main(String[] args) throws IOException {
         //BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedReader br = new BufferedReader(
-                new FileReader("hansaem/boj/step/char_string/input/p11654.txt")
+                new FileReader("hansaem/boj/step/char_string/input/p02743.txt")
         );
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
@@ -15,6 +15,9 @@ public class b5_p11654 {
         StringBuilder sb = new StringBuilder();
 
         String str = String.valueOf(st.nextToken());
-        System.out.println((int)str.charAt(0));
+
+        System.out.println(str.length());
+
+
     }
 }

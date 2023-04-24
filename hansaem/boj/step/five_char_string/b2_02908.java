@@ -1,23 +1,25 @@
-package boj.step.char_string;
+package boj.step.five_char_string;
 
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class b5_p02743 {
+public class b2_02908 {
     public static void main(String[] args) throws IOException {
         //BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedReader br = new BufferedReader(
-                new FileReader("hansaem/boj/step/char_string/input/p02743.txt")
+                new FileReader("hansaem/boj/step/char_string/input/p02908.txt")
         );
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         StringTokenizer st = new StringTokenizer(br.readLine());
         StringBuilder sb = new StringBuilder();
 
-        String str = String.valueOf(st.nextToken());
+        StringBuilder sb1 = new StringBuilder(st.nextToken());
+        StringBuilder sb2 = new StringBuilder(st.nextToken());
 
-        System.out.println(str.length());
+        int num1 = Integer.parseInt(sb1.reverse().toString());
+        int num2 = Integer.parseInt(sb2.reverse().toString());
 
-
+        System.out.println(Math.max(num1, num2));
     }
 }

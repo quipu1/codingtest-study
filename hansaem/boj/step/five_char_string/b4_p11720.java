@@ -1,4 +1,4 @@
-package boj.step.char_string;
+package boj.step.five_char_string;
 
 import java.io.*;
 import java.util.StringTokenizer;
@@ -15,7 +15,7 @@ public class b4_p11720 {
         StringBuilder sb = new StringBuilder();
 
         String str;
-        while ( (str = br.readLine()) != null ) {
+        while ((str = br.readLine()) != null) {
             int N = Integer.parseInt(str);
             int sum = 0;
             String S = br.readLine();

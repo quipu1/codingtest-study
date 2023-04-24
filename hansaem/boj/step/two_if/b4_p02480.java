@@ -9,7 +9,7 @@ public class b4_p02480 {
 	public static void main(String[] args) throws IOException {
 		//BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedReader br = new BufferedReader(
-				new FileReader("hansaem/boj/step/two_if/input/p02480.txt")
+				new FileReader("hansaem/boj/step/two_if/input/p02480.txt")1
 				);
 		
 		StringTokenizer st = new StringTokenizer(br.readLine());
