@@ -35,7 +35,7 @@ public class b2_p10812 {
         for (int i = 0; i < N; i++) {
             array[i] = i + 1;
         }
-        System.out.println(Arrays.toString(array));
+        //System.out.println(Arrays.toString(array));
 
         for (int i = 0; i < M; i++) {
             List<Integer> list = new ArrayList<>();
@@ -44,17 +44,17 @@ public class b2_p10812 {
             int end = Integer.parseInt(st.nextToken());
             int mid = Integer.parseInt(st.nextToken());
 
-            System.out.println("start: " + start + ", mid: " + mid + ", end: " + end);
+            //System.out.println("start: " + start + ", mid: " + mid + ", end: " + end);
             for (int j = 0; j < start - 1; j++) list.add(array[j]);
-            for (int j = mid - 1; j < end - 1; j++) list.add(array[j]);
+            for (int j = mid - 1; j < end; j++) list.add(array[j]);
             for (int j = start - 1; j < mid - 1; j++) list.add(array[j]);
-            for (int j = end - 1; j <= N - 1; j++) list.add(array[j]);
+            for (int j = end ; j <= N - 1; j++) list.add(array[j]);
 
             //System.out.println(Arrays.toString(array));
-            System.out.println(list.toString() + "\n");
+            //System.out.println(list.toString() + "\n");
             array = list.stream().mapToInt(m -> m).toArray();
         }
-        bw.write(Arrays.toString(array));
+        Arrays.stream(array).forEach(i -> System.out.print(i + " "));
         bw.close();
     }
 }
