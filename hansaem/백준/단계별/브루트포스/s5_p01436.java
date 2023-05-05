@@ -17,13 +17,20 @@ public class s5_p01436 {
         int N = Integer.parseInt(st.nextToken());
 
         int count = 0;
-        int idx = 0;
-        while (count < N) {
-            idx += 1;
-            if (String.valueOf(idx).contains("666")) count += 1;
-            if (count == N) break;
+        if (N % 5 == 0) sb.append(N / 5);
+        else {
+            int maxFive = N / 5;
+            for (int i = maxFive; i >= 0; i--) {
+                int tmp = N - 5 * i;
+                if (tmp % 3 == 0) {
+                    count = i + tmp / 3;
+                    break;
+                }
+                //System.out.println(i + ", " + tmp + ", "+ count);
+            }
+            if (count == 0) count = -1;
+            sb.append(count);
         }
-        sb.append(idx);
 
         bw.write(sb.toString());
         bw.flush();
